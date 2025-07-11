@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mealzo Summer Sizzler | Leaderboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: #e63946;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header p {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .update-notice {
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: bold;
+            color: #1d3557;
+        }
+        .leaderboard {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .leaderboard th, .leaderboard td {
+            padding: 15px;
+            text-align: left;
+        }
+        .leaderboard th {
+            background-color: #457b9d;
+            color: white;
+            font-size: 1.1em;
+        }
+        .leaderboard tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .leaderboard tr:hover {
+            background-color: #e9ecef;
+        }
+        .rank {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+        }
+        .name {
+            font-weight: 600;
+        }
+        .orders {
+            text-align: center;
+            font-weight: bold;
+            color: #e63946;
+        }
+        /* Top 3 Highlighting */
+        .leaderboard tr:nth-child(1) .rank { color: #ffd700; /* Gold */ }
+        .leaderboard tr:nth-child(2) .rank { color: #c0c0c0; /* Silver */ }
+        .leaderboard tr:nth-child(3) .rank { color: #cd7f32; /* Bronze */ }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .home-button {
+             display: block;
+             width: 200px;
+             margin: 30px auto 0;
+             background-color: #457b9d;
+             color: white;
+             padding: 12px 20px;
+             font-size: 1em;
+             font-weight: bold;
+             text-decoration: none;
+             border-radius: 8px;
+             text-align: center;
+             transition: background-color 0.2s;
+        }
+        .home-button:hover {
+            background-color: #3a6a8a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Mealzo Summer Sizzler</h1>
+            <p>The race is on! The more you order, the higher you climb. Win amazing prizes!</p>
+        </div>
+
+        <div class="update-notice">
+            <p>🏆 Leaderboard Updates Daily! 🏆</p>
+        </div>
+
+        <table class="leaderboard">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th style="text-align: center;">Orders</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="rank">🥇 1</td>
+                    <td class="name">Liam S.</td>
+                    <td class="orders">52</td>
+                </tr>
+                <tr>
+                    <td class="rank">🥈 2</td>
+                    <td class="name">Emma B.</td>
+                    <td class="orders">48</td>
+                </tr>
+                <tr>
+                    <td class="rank">🥉 3</td>
+                    <td class="name">Noah W.</td>
+                    <td class="orders">45</td>
+                </tr>
+                <tr>
+                    <td class="rank">4</td>
+                    <td class="name">Olivia J.</td>
+                    <td class="orders">41</td>
+                </tr>
+                <tr>
+                    <td class="rank">5</td>
+                    <td class="name">James R.</td>
+                    <td class="orders">39</td>
+                </tr>
+                <tr>
+                    <td class="rank">6</td>
+                    <td class="name">Sophia M.</td>
+                    <td class="orders">35</td>
+                </tr>
+                <tr>
+                    <td class="rank">7</td>
+                    <td class="name">Lucas A.</td>
+                    <td class="orders">32</td>
+                </tr>
+                <tr>
+                    <td class="rank">8</td>
+                    <td class="name">Isabella L.</td>
+                    <td class="orders">29</td>
+                </tr>
+                <tr>
+                    <td class="rank">9</td>
+                    <td class="name">Mia W.</td>
+                    <td class="orders">28</td>
+                </tr>
+                <tr>
+                    <td class="rank">10</td>
+                    <td class="name">Henry T.</td>
+                    <td class="orders">26</td>
+                </tr>
+                 </tbody>
+        </table>
+
+         <a href="index.html" class="home-button">← Back to Campaign</a>
+
+        <div class="footer">
+            <p>Campaign ends on the 10th of next month. Winners will be announced on the 11th. Good luck!</p>
+        </div>
+    </div>
+
+</body>
+</html>
