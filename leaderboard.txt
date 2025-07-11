@@ -30,28 +30,35 @@
       color: #fc5203;
       font-size: 2rem;
     }
-    h2 {
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
+    .leaderboard {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1.5rem;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-      text-align: left;
-      margin: 1rem 0;
+    .leaderboard th, .leaderboard td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
     }
-    ul li {
-      margin: 0.5rem 0;
+    .leaderboard th {
+        background-color: #1d3557;
+        color: white;
+        border-bottom: none;
+    }
+    .rank {
+        font-weight: bold;
+        font-size: 1.1em;
+        text-align: center;
     }
     .cta-button {
-      background-color: #777; /* A different color for the back button */
+      background-color: #777;
       color: white;
       padding: 0.8rem 1.5rem;
       border: none;
       border-radius: 8px;
       text-decoration: none;
       font-size: 1rem;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       display: inline-block;
     }
      @media (max-width: 600px) {
@@ -65,24 +72,32 @@
   <div class="container">
     <img src="https://uploads.onecompiler.io/43jasxyr7/43knnhq9c/mealzo2.png" alt="Mealzo Logo" class="logo" />
     <h1>📊 Live Leaderboard</h1>
-    <h2>Order More. Rank Higher. Win Big!</h2>
+    <p>Updated daily. Keep ordering to climb the ranks!</p>
 
-    <p>This leaderboard shows the top customers between <strong>today</strong> and <strong>August 10th</strong>.</p>
-
-    <ul>
-      <li>🥇 <strong>1st Place:</strong> Liam S.</li>
-      <li>🥈 <strong>2nd Place:</strong> Emma B.</li>
-      <li>🥉 <strong>3rd Place:</strong> Noah W.</li>
-      <li>🏅 <strong>4th Place:</strong> Olivia J.</li>
-      <li>🏅 <strong>5th Place:</strong> James R.</li>
-      <li>🏅 <strong>6th Place:</strong> Sophia M.</li>
-      <li>🏅 <strong>7th Place:</strong> Lucas A.</li>
-      <li>🏅 <strong>8th Place:</strong> Isabella L.</li>
-      <li>🏅 <strong>9th Place:</strong> Mia W.</li>
-      <li>🏅 <strong>10th Place:</strong> Henry T.</li>
-    </ul>
+    <table class="leaderboard">
+        <thead>
+            <tr>
+                <th style="text-align:center;">Rank</th>
+                <th>Name</th>
+                <th style="text-align:center;">Orders</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="rank">🥇 1</td><td>Liam S.</td><td style="text-align:center;">52</td></tr>
+            <tr><td class="rank">🥈 2</td><td>Emma B.</td><td style="text-align:center;">48</td></tr>
+            <tr><td class="rank">🥉 3</td><td>Noah W.</td><td style="text-align:center;">45</td></tr>
+            <tr><td class="rank">4</td><td>Olivia J.</td><td style="text-align:center;">41</td></tr>
+            <tr><td class="rank">5</td><td>James R.</td><td style="text-align:center;">39</td></tr>
+            <tr><td class="rank">6</td><td>Sophia M.</td><td style="text-align:center;">35</td></tr>
+            <tr><td class="rank">7</td><td>Lucas A.</td><td style="text-align:center;">32</td></tr>
+            <tr><td class="rank">8</td><td>Isabella L.</td><td style="text-align:center;">29</td></tr>
+            <tr><td class="rank">9</td><td>Mia W.</td><td style="text-align:center;">28</td></tr>
+            <tr><td class="rank">10</td><td>Henry T.</td><td style="text-align:center;">26</td></tr>
+        </tbody>
+    </table>
 
     <a href="/index.html" class="cta-button">⬅️ Back to Challenge Info</a>
+
   </div>
 </body>
 </html>
