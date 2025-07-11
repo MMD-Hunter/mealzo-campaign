@@ -51,6 +51,10 @@
       margin: 0.8rem 0;
       font-size: 1.1rem;
     }
+    /* --- NEW CSS FOR BUTTONS --- */
+    .button-container {
+        margin-top: 1.5rem;
+    }
     .cta-button {
       background: linear-gradient(90deg, #fc5203, #d94200);
       color: white;
@@ -66,14 +70,15 @@
     }
     .cta-button:hover {
         transform: translateY(-3px);
-        box-shadow: 0 4px 15px rgba(252, 82, 3, 0.4);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
     .leaderboard-link {
       background: linear-gradient(90deg, #1d3557, #13243a);
     }
-    .leaderboard-link:hover {
-        box-shadow: 0 4px 15px rgba(29, 53, 87, 0.4);
+    .spin-win-link {
+        background: linear-gradient(90deg, #8338ec, #3a86ff);
     }
+    /* --- END NEW CSS --- */
     .fine-print {
         font-size: 0.9rem;
         color: #555;
@@ -128,8 +133,8 @@
         <h2>🏆 The Prizes 🏆</h2>
         <ul>
             <li>🥇 <strong>1st Place:</strong> 15 Days of FREE Food (every order on us!)</li>
-            <li>🥉 <strong>2rd Place:</strong> £100 Mealzo Voucher</li>
-            <li>🥈 <strong>3nd Place:</strong> 1 Month Free Delivery + £50 Mealzo Voucher</li>
+            <li>🥈 <strong>2nd Place:</strong> £100 Mealzo Voucher</li>
+            <li>🥉 <strong>3rd Place:</strong> 1 Month Free Delivery + £50 Mealzo Voucher</li>
             <li>🏅 <strong>4th–10th Place:</strong> 10 Days of Free Delivery + Mealzo Swag Pack</li>
             <li>🎖️ <strong>11th–30th Place:</strong> A voucher for 25% off your next 3 orders!</li>
         </ul>
@@ -140,8 +145,12 @@
         <p>The top 30 customers with the most orders between <strong>July 11th – August 10th, 2025</strong> will win. In case of a tie, the customer with the higher total order value wins.</p>
     </div>
 
-    <a href="/leaderboard.html" class="cta-button leaderboard-link">📊 View Live Leaderboard</a>
-    <a href="https://mealzo.co.uk" class="cta-button" target="_blank">🍔 Order Now</a>
+    <div class="button-container">
+        <a href="/leaderboard.html" class="cta-button leaderboard-link">📊 View Leaderboard</a>
+        <a href="https://mealzo-spin.vercel.app/" class="cta-button spin-win-link" target="_blank">🎡 Spin & Win</a>
+        <a href="https://mealzo.co.uk" class="cta-button" target="_blank">🍔 Order Now</a>
+    </div>
+
   </div>
 
   <script>
