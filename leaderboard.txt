@@ -1,189 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mealzo Summer Sizzler | Leaderboard</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
-        .header {
-            text-align: center;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
-        .header h1 {
-            color: #e63946;
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .header p {
-            margin-top: 10px;
-            font-size: 1.1em;
-            color: #555;
-        }
-        .update-notice {
-            text-align: center;
-            margin-bottom: 25px;
-            font-weight: bold;
-            color: #1d3557;
-        }
-        .leaderboard {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .leaderboard th, .leaderboard td {
-            padding: 15px;
-            text-align: left;
-        }
-        .leaderboard th {
-            background-color: #457b9d;
-            color: white;
-            font-size: 1.1em;
-        }
-        .leaderboard tr:nth-child(even) {
-            background-color: #f8f9fa;
-        }
-        .leaderboard tr:hover {
-            background-color: #e9ecef;
-        }
-        .rank {
-            font-size: 1.2em;
-            font-weight: bold;
-            text-align: center;
-        }
-        .name {
-            font-weight: 600;
-        }
-        .orders {
-            text-align: center;
-            font-weight: bold;
-            color: #e63946;
-        }
-        /* Top 3 Highlighting */
-        .leaderboard tr:nth-child(1) .rank { color: #ffd700; /* Gold */ }
-        .leaderboard tr:nth-child(2) .rank { color: #c0c0c0; /* Silver */ }
-        .leaderboard tr:nth-child(3) .rank { color: #cd7f32; /* Bronze */ }
-
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #777;
-        }
-        .home-button {
-             display: block;
-             width: 200px;
-             margin: 30px auto 0;
-             background-color: #457b9d;
-             color: white;
-             padding: 12px 20px;
-             font-size: 1em;
-             font-weight: bold;
-             text-decoration: none;
-             border-radius: 8px;
-             text-align: center;
-             transition: background-color 0.2s;
-        }
-        .home-button:hover {
-            background-color: #3a6a8a;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mealzo Summer Challenge - Leaderboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://uploads.onecompiler.io/43jasxyr7/43n4wzy5e/pattern-mealzo.jpg') repeat;
+      background-size: cover;
+      color: #333;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      background: white;
+      max-width: 600px;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .logo {
+      width: 160px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      color: #fc5203;
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      margin: 1rem 0;
+    }
+    ul li {
+      margin: 0.5rem 0;
+    }
+    .cta-button {
+      background-color: #777; /* A different color for the back button */
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+      margin-top: 1rem;
+      display: inline-block;
+    }
+     @media (max-width: 600px) {
+       .container {
+         padding: 1rem;
+       }
+     }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <img src="https://uploads.onecompiler.io/43jasxyr7/43knnhq9c/mealzo2.png" alt="Mealzo Logo" class="logo" />
+    <h1>📊 Live Leaderboard</h1>
+    <h2>Order More. Rank Higher. Win Big!</h2>
 
-    <div class="container">
-        <div class="header">
-            <h1>Mealzo Summer Sizzler</h1>
-            <p>The race is on! The more you order, the higher you climb. Win amazing prizes!</p>
-        </div>
+    <p>This leaderboard shows the top customers between <strong>today</strong> and <strong>August 10th</strong>.</p>
 
-        <div class="update-notice">
-            <p>🏆 Leaderboard Updates Daily! 🏆</p>
-        </div>
+    <ul>
+      <li>🥇 <strong>1st Place:</strong> Liam S.</li>
+      <li>🥈 <strong>2nd Place:</strong> Emma B.</li>
+      <li>🥉 <strong>3rd Place:</strong> Noah W.</li>
+      <li>🏅 <strong>4th Place:</strong> Olivia J.</li>
+      <li>🏅 <strong>5th Place:</strong> James R.</li>
+      <li>🏅 <strong>6th Place:</strong> Sophia M.</li>
+      <li>🏅 <strong>7th Place:</strong> Lucas A.</li>
+      <li>🏅 <strong>8th Place:</strong> Isabella L.</li>
+      <li>🏅 <strong>9th Place:</strong> Mia W.</li>
+      <li>🏅 <strong>10th Place:</strong> Henry T.</li>
+    </ul>
 
-        <table class="leaderboard">
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Name</th>
-                    <th style="text-align: center;">Orders</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="rank">🥇 1</td>
-                    <td class="name">Liam S.</td>
-                    <td class="orders">52</td>
-                </tr>
-                <tr>
-                    <td class="rank">🥈 2</td>
-                    <td class="name">Emma B.</td>
-                    <td class="orders">48</td>
-                </tr>
-                <tr>
-                    <td class="rank">🥉 3</td>
-                    <td class="name">Noah W.</td>
-                    <td class="orders">45</td>
-                </tr>
-                <tr>
-                    <td class="rank">4</td>
-                    <td class="name">Olivia J.</td>
-                    <td class="orders">41</td>
-                </tr>
-                <tr>
-                    <td class="rank">5</td>
-                    <td class="name">James R.</td>
-                    <td class="orders">39</td>
-                </tr>
-                <tr>
-                    <td class="rank">6</td>
-                    <td class="name">Sophia M.</td>
-                    <td class="orders">35</td>
-                </tr>
-                <tr>
-                    <td class="rank">7</td>
-                    <td class="name">Lucas A.</td>
-                    <td class="orders">32</td>
-                </tr>
-                <tr>
-                    <td class="rank">8</td>
-                    <td class="name">Isabella L.</td>
-                    <td class="orders">29</td>
-                </tr>
-                <tr>
-                    <td class="rank">9</td>
-                    <td class="name">Mia W.</td>
-                    <td class="orders">28</td>
-                </tr>
-                <tr>
-                    <td class="rank">10</td>
-                    <td class="name">Henry T.</td>
-                    <td class="orders">26</td>
-                </tr>
-                 </tbody>
-        </table>
-
-         <a href="index.html" class="home-button">← Back to Campaign</a>
-
-        <div class="footer">
-            <p>Campaign ends on the 10th of next month. Winners will be announced on the 11th. Good luck!</p>
-        </div>
-    </div>
-
+    <a href="/index.html" class="cta-button">⬅️ Back to Challenge Info</a>
+  </div>
 </body>
 </html>
