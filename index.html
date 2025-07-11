@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mealzo Summer Challenge</title>
+  <title>Mealzo Summer Challenge - Leaderboard</title>
   <style>
     body {
       margin: 0;
@@ -30,62 +30,115 @@
       color: #fc5203;
       font-size: 2rem;
     }
-    h2 {
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
+    .leaderboard {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1.5rem;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-      text-align: left;
-      margin: 1rem 0;
+    .leaderboard th, .leaderboard td {
+        padding: 12px 15px;
+        text-align: left;
     }
-    ul li {
-      margin: 0.5rem 0;
+    .leaderboard th {
+        background-color: #fc5203;
+        color: white;
+    }
+    .leaderboard tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    .rank {
+        font-weight: bold;
+        font-size: 1.1em;
+        text-align: center;
     }
     .cta-button {
-      background-color: #fc5203;
+      background-color: #777; /* A different color for the back button */
       color: white;
       padding: 0.8rem 1.5rem;
       border: none;
       border-radius: 8px;
       text-decoration: none;
       font-size: 1rem;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       display: inline-block;
     }
-    .leaderboard-link {
-      margin-top: 1rem;
-      display: block;
-      color: #fc5203;
-      text-decoration: underline;
-      font-weight: bold;
-    }
-    @media (max-width: 600px) {
-      .container {
-        padding: 1rem;
-      }
-    }
+     @media (max-width: 600px) {
+       .container {
+         padding: 1rem;
+       }
+     }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="https://uploads.onecompiler.io/43jasxyr7/43knnhq9c/mealzo2.png" alt="Mealzo Logo" class="logo" />
-    <h1>🔥 Mealzo Summer Challenge</h1>
-    <h2>Order More. Rank Higher. Win Big!</h2>
+    <h1>📊 Live Leaderboard</h1>
+    <p>Updated daily. Keep ordering to climb the ranks!</p>
 
-    <p>Between <strong>today</strong> and <strong>August 10th</strong>, the top Mealzo customers win:</p>
+    <table class="leaderboard">
+        <thead>
+            <tr>
+                <th style="text-align:center;">Rank</th>
+                <th>Name</th>
+                <th style="text-align:center;">Orders</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="rank">🥇 1</td>
+                <td>Liam S.</td>
+                <td style="text-align:center;">52</td>
+            </tr>
+            <tr>
+                <td class="rank">🥈 2</td>
+                <td>Emma B.</td>
+                <td style="text-align:center;">48</td>
+            </tr>
+            <tr>
+                <td class="rank">🥉 3</td>
+                <td>Noah W.</td>
+                <td style="text-align:center;">45</td>
+            </tr>
+            <tr>
+                <td class="rank">4</td>
+                <td>Olivia J.</td>
+                <td style="text-align:center;">41</td>
+            </tr>
+            <tr>
+                <td class="rank">5</td>
+                <td>James R.</td>
+                <td style="text-align:center;">39</td>
+            </tr>
+            <tr>
+                <td class="rank">6</td>
+                <td>Sophia M.</td>
+                <td style="text-align:center;">35</td>
+            </tr>
+            <tr>
+                <td class="rank">7</td>
+                <td>Lucas A.</td>
+                <td style="text-align:center;">32</td>
+            </tr>
+            <tr>
+                <td class="rank">8</td>
+                <td>Isabella L.</td>
+                <td style="text-align:center;">29</td>
+            </tr>
+            <tr>
+                <td class="rank">9</td>
+                <td>Mia W.</td>
+                <td style="text-align:center;">28</td>
+            </tr>
+            <tr>
+                <td class="rank">10</td>
+                <td>Henry T.</td>
+                <td style="text-align:center;">26</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <ul>
-      <li>🥇 <strong>1st Place:</strong> 15 Days of FREE Food (every order on us!)</li>
-      <li>🥈 <strong>2nd Place:</strong> Coming Soon 👀</li>
-      <li>🥉 <strong>3rd Place:</strong> £100 Mealzo Voucher</li>
-      <li>🏅 <strong>4th–10th:</strong> 10 Days Free Delivery</li>
-    </ul>
+    <a href="/index.html" class="cta-button">⬅️ Back to Challenge</a>
 
-    <a href="https://mealzo-leaderboard.vercel.app" class="leaderboard-link" target="_blank">📊 View Live Leaderboard (Updated Daily)</a>
-
-    <a href="https://mealzo.co.uk" class="cta-button" target="_blank">🍔 Order Now</a>
   </div>
 </body>
 </html>
